@@ -48,3 +48,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Deploy to Firebase
 `firebase deploy`
 
+## Angular Material - (menu)
+`ng g @angular/material:material-nav --name=menu`
+
