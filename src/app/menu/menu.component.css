@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.centro {
+  padding-left: 30%;
+}
+
+.titulo {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20pt;
+  padding-left: 20px;
+}
+
+.logo {
+  padding-left: 50px;
+}
