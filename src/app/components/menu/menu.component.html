@@ -5,9 +5,9 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar class="centro">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#"><mat-icon>list</mat-icon> List of Animes</a>
-      <a mat-list-item href="#"><mat-icon>add</mat-icon> Register Anime</a>
-      <a mat-list-item href="#"><mat-icon>search</mat-icon> Search Anime</a>
+      <a mat-list-item routerLink="list"><mat-icon>list</mat-icon> List of Animes</a>
+      <a mat-list-item routerLink="register"><mat-icon>add</mat-icon> Register Anime</a>
+      <a mat-list-item routerLink="search"><mat-icon>search</mat-icon> Search Anime</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -22,6 +22,9 @@
       </button>
       <span class="logo"><img src="../../assets/img/list.png" alt="Anime List"> <span class="titulo"> Anime List Angular</span></span>
     </mat-toolbar>
+
     <!-- Add Content Here -->
+    <ng-content></ng-content>
+
   </mat-sidenav-content>
 </mat-sidenav-container>
