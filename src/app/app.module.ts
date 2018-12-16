@@ -13,6 +13,13 @@ import { SearchComponent } from './components/search/search.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 
+/* Firebase */
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from './../environments/environment';
+import { AngularFireModule } from 'angularfire2/index';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +31,10 @@ import { MatInputModule } from '@angular/material/input';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule.initializeApp( environment ),
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     BrowserAnimationsModule,
     LayoutModule,
     MatToolbarModule,

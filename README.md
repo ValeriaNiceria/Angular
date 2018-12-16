@@ -1,6 +1,9 @@
-# AnimeListAngular
+# Anime list angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.3.
+
+## Install Angular CLI
+`npm i -g @angular/cli@latest`
 
 ## Development server
 
@@ -25,3 +28,23 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Install firebase in project
+`npm i firebase angularfire2`
+
+## Install firebase
+`npm install -g firebase-tools`
+
+## Login to Firebase
+`firebase login`
+
+## Using firebase in project
+`firebase init`
+
+## Build project
+`ng build --prod`
+
+## Deploy to Firebase
+`firebase deploy`
+
