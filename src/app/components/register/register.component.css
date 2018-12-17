@@ -18,3 +18,11 @@
   max-width: 92%;
   padding-top: 10px;
 }
+
+.upload {
+	color: #c1c1c1;
+}
+
+.btn-send {
+	margin-top: 30px;
+}

@@ -12,3 +12,16 @@
   padding-top: 17px;
   padding-left: 6%;
 }
+
+.footer-right {
+	float: right;
+    margin-right: 30px;
+}
+
+
+.btn-delete {
+	font-size: 23px;
+	line-height: 23px;
+	background-color: #c2185b;
+	padding: 5px;
+}
