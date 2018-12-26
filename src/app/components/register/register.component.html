@@ -11,10 +11,10 @@
       </mat-form-field>
 
       <label class="upload"> Upload image: </label>
-      <input type="file">
+      <input type="file" name="upload" id="upload" (change)="onFileSelected($event)">
   
       <br/>
-      <button mat-stroked-button class="btn-send"> Register anime </button>
+      <button mat-stroked-button class="btn-send" (click)="onUpload()"> Register anime </button>
 
     </form>
 
