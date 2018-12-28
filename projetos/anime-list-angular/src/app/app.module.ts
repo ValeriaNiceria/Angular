@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+//import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +14,7 @@ import { SearchComponent } from './components/search/search.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 
-import { FormsModule } from '@angular/forms';
+//import { FormsModule } from '@angular/forms';
 
 /* Firebase */
 import { AngularFireDatabaseModule } from 'angularfire2/database';
@@ -48,9 +48,9 @@ import { AngularFireStorageModule } from 'angularfire2/storage';
     MatListModule,
     MatCardModule,
     MatInputModule,
-    HttpClientModule,
+    //HttpClientModule,
     AngularFireStorageModule,
-    FormsModule
+    //FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

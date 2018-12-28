@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NgForm } from '@angular/forms';
+//import { NgForm } from '@angular/forms';
 
-import { AnimeService } from '../../services/anime/anime.service'
+//import { AnimeService } from '../../services/anime/anime.service'
 
 
 @Component({
@@ -13,7 +13,7 @@ import { AnimeService } from '../../services/anime/anime.service'
 export class RegisterComponent implements OnInit {
 
   constructor(
-    private animeService: AnimeService
+    //private animeService: AnimeService
   ) { }
 
   ngOnInit() {
@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
     this.selected_file = event.target.files[0]
   }
 
-  onSendAnime(animeForm: NgForm) {
-    console.log('Anime Form: ', animeForm)  
-  }
+  //onSendAnime(animeForm: NgForm) {
+    //console.log('Anime Form: ', animeForm)  
+  //}
 }
