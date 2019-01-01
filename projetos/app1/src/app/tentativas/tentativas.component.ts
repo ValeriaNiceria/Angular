@@ -19,7 +19,6 @@ export class TentativasComponent implements OnInit {
 	]
 
 	constructor() {
-		console.log('Coraçoes: ', this.coracoes)
 	}
 
 	ngOnInit() {
