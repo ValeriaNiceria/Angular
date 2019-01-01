@@ -14,13 +14,13 @@
 		<div class="row">
 			<div class="col">
 				<h6 class="font-weight-bold">{{ instrucao }}</h6>
-				<p>{{ frases[0].fraseEng }}</p>
+				<p>{{ rodadaFrase.fraseEng }}</p>
 
 				<div class="form-group">
 					<textarea class="form-control" rows="3" (input)="atualizaResposta($event)"></textarea>
 				</div>
 
-				<button type="button" class="btn btn-primary float-right">Verificar</button>
+				<button type="button" class="btn btn-primary float-right" (click)="verificarResposta()">Verificar</button>
 			</div>
 		</div>
 	</div>
