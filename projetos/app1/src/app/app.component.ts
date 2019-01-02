@@ -19,4 +19,8 @@ export class AppComponent {
 
 		this.jogoEmAndamento = false
 	}
+
+	public reiniciarJogo(): void {
+		this.jogoEmAndamento = true
+	}
 }
