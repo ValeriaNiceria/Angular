@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app1';
+
+	public encerrarJogo(tipo: string): void {
+		if (tipo == 'vitoria') {
+
+		} else {
+			
+		}
+	}
 }
