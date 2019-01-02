@@ -7,11 +7,17 @@ import { AppComponent } from './app.component';
 // Firebase
 import { environment } from '../environments/environment'
 import { AngularFireModule } from '@angular/fire'
-import { AngularFireDatabaseModule } from '@angular/fire/database'
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { EditComponent } from './contatos/edit/edit.component';
+import { ListComponent } from './contatos/list/list.component';
+import { SearchComponent } from './contatos/list/search/search.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EditComponent,
+    ListComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
