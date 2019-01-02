@@ -1,3 +1,13 @@
 <app-topo></app-topo>
-<app-painel (encerrarJogo)="encerrarJogo($event)"></app-painel>
+<app-painel (encerrarJogo)="encerrarJogo($event)" *ngIf="jogoEmAndamento"></app-painel>
+<div *ngIf="!jogoEmAndamento">
+	<div class="container">
+		<div class="jumbotron">
+			<h3 class="text-center">{{ mensagemEncerramento }}</h3>
+		</div>
+	</div>
+</div>
+
 <!-- <router-outlet></router-outlet> -->
+
+
