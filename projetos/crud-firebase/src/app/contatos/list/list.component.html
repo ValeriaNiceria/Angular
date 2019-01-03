@@ -12,8 +12,8 @@
 	  			</div>
 	  			<div class="col-sm-4">
 	  				<div class="d-flex justify-content-end">
-	  					<button class="btn btn-outline-warning">Editar</button>
-	  					<button class="btn btn-outline-danger">Deletar</button>
+	  					<button class="btn btn-outline-warning" (click)="edit(contato, contato.key)">Editar</button>
+	  					<button class="btn btn-outline-danger" (click)="delete(contato.key)">Deletar</button>
 	  				</div>
 	  			</div>
   			</div>

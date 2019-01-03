@@ -31,7 +31,7 @@ export class ListComponent implements OnInit {
 
 
 	public edit(contato: Contato, key: string) {
-
+		this.contatoDataService.changeContato(contato, key)
 	}
 
 }
