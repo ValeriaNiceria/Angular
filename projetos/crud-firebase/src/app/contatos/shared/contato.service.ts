@@ -42,9 +42,9 @@ export class ContatoService {
 		this.db.object(`contato/${key}`).remove()
 	}
 
-	public search(busca) {
+	public search(start, end) {
 		return this.db.list('/contato', ref => 
-			busca ? ref.orderByChild('nome').equalTo(busca) : ref
+			start ? ref.orderByChild('nome').startAt(start).endAt(end) : ref
 		).snapshotChanges()
 		.pipe(
 			map(changes => {

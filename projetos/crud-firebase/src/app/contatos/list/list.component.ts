@@ -36,6 +36,10 @@ export class ListComponent implements OnInit {
 
 	public searchEmmit(valor: string) {
 		console.log('Search Value: ', valor)
-		this.contatos = this.contatoService.search(valor)
+
+		let startAt = valor
+		let endAt = valor + '\uf8ff'
+
+		this.contatos = this.contatoService.search(startAt, endAt)
 	}
 }
