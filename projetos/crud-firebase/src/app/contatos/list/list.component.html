@@ -1,4 +1,4 @@
-<app-search></app-search>
+<app-search (searchEmmit)="searchEmmit($event)"></app-search>
 
 <div class="container">
 	<ul class="list-group list-group-flush" *ngFor="let contato of contatos | async">

@@ -8,6 +8,9 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment'
 import { AngularFireModule } from '@angular/fire'
 import { AngularFireDatabaseModule } from '@angular/fire/database';
+
+import { AngularFirestoreModule } from '@angular/fire/firestore'
+
 import { EditComponent } from './contatos/edit/edit.component';
 import { ListComponent } from './contatos/list/list.component';
 import { SearchComponent } from './contatos/list/search/search.component'
@@ -23,7 +26,8 @@ import { SearchComponent } from './contatos/list/search/search.component'
     BrowserModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    AngularFirestoreModule.enablePersistence()
   ],
   providers: [],
   bootstrap: [AppComponent]

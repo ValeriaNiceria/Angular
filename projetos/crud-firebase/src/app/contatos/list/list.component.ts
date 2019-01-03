@@ -33,4 +33,9 @@ export class ListComponent implements OnInit {
 		this.contatoDataService.changeContato(contato, key)
 	}
 
+
+	public searchEmmit(valor: string) {
+		console.log('Search Value: ', valor)
+		this.contatos = this.contatoService.search(valor)
+	}
 }

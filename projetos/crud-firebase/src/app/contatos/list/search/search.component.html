@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="card">
 		<div class="card-body bg-info">
-			<input type="text" name="nome" class="form-control" placeholder="Pesquisar contato...">
+			<input type="text" name="nome" class="form-control" placeholder="Pesquisar contato..." [(ngModel)]="searchValue" (input)="search($event)">
 		</div>
 	</div>	
 </div>
