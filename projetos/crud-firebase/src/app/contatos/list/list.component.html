@@ -1,7 +1,22 @@
 <app-search></app-search>
 
 <div class="container">
-	<ul class="list-group list-group-flush">
-  		<li class="list-group-item">Cras justo odio</li>
-	</ul>
+	<ul class="list-group list-group-flush" *ngFor="let contato of contatos | async">
+  		<li class="list-group-item">
+  			<div class="row">
+	  			<div class="col-sm-4">
+	  				{{ contato.nome }}
+	  			</div>
+	  			<div class="col-sm-4">
+	  				<span class="badge badge-light">{{ contato.telefone }}</span>
+	  			</div>
+	  			<div class="col-sm-4">
+	  				<div class="d-flex justify-content-end">
+	  					<button class="btn btn-outline-warning">Editar</button>
+	  					<button class="btn btn-outline-danger">Deletar</button>
+	  				</div>
+	  			</div>
+  			</div>
+  		</li>
+	</ul> 
 </div>
