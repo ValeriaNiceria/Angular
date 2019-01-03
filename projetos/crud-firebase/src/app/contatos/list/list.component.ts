@@ -22,11 +22,10 @@ export class ListComponent implements OnInit {
 
 	ngOnInit() {
 		this.contatos = this.contatoService.getAll()
-		console.log(this.contatoService.getAll())
 	}
 
 	public delete(key: string) {
-
+		this.contatoService.delete(key)
 	}
 
 

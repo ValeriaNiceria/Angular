@@ -53,7 +53,7 @@ export class EditComponent implements OnInit {
 		// removendo a mensagem de alert
 		setTimeout(() => {
 			this.alert = false
-		}, 4000)
+		}, 3000)
 	}
 
 }
