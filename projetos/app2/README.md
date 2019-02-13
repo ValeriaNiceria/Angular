@@ -3,6 +3,9 @@
 ## Iniciando projeto com a flag --prefix
 `ng new app2 --prefix xyz`
 
+## Não criar o arquivo de teste
+`ng g c topo --skipTests=false`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
 ## Development server
