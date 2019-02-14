@@ -24,6 +24,7 @@
             ],
             "styles": [
               "./node_modules/material-design-lite/material.min.css",
+              "./node_modules/material-design-lite/dist/material.pink-light_blue.min.css",
               "src/styles.css"
             ],
             "scripts": [

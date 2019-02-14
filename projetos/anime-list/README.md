@@ -1,5 +1,13 @@
 # AnimeList
 
+## Install Angular CLI
+
+`npm i -g @angular/cli@lastest`
+
+
+## Style in this project
+* [Material Design Lite](https://getmdl.io/started/index.html) 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
 ## Development server
@@ -25,3 +33,28 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## Install firebase in project
+
+`npm i firebase angularfire2`
+
+## Install firebase
+
+`npm install -g firebase-tools`
+
+## Login firebase
+`firebase login`
+
+## Using firebase in project
+`firebase init`
+
+
+## Build project
+`ng build --prod`
+
+## Deploy to firebase
+`firebase deploy`
+
+## Install angular material - (menu)
+`ng g @angular/material:material-nav --name=menu`
