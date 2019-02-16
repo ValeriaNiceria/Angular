@@ -2,7 +2,9 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Anime List</span>
+      <a routerLink="/" class="mdl-navigation__link">
+        <span class="mdl-layout-title">Anime List</span>
+      </a>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       
@@ -20,14 +22,18 @@
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Anime List</span>
     <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">
+      <a routerLink="/" class="mdl-navigation__link">
+        <span class="mdl-layout-title"><i class="material-icons">list_alt</i> Anime List</span>
+      </a>
+      <a class="mdl-navigation__link" routerLink="cadastro">
         <i class="material-icons">add_box</i> Cadastrar anime
       </a>
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here --></div>
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
   </main>
 </div>
