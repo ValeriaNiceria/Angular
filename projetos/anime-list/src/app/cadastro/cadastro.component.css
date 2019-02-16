@@ -1,0 +1,14 @@
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.display-2 {
+	text-align: center;
+	color: #595959;
+}
+
+.mdl-button {
+	float: right;
+}
+
