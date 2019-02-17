@@ -1,0 +1,25 @@
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.display-2 {
+	text-align: center;
+	color: #595959;
+}
+
+button {
+	float: right;
+}
+
+#file {
+	display: none;
+}
+
+.material-icons {
+	margin: auto;
+}
+
+small {
+	color: #595959;
+}
