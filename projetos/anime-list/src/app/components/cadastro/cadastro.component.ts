@@ -13,4 +13,9 @@ export class CadastroComponent implements OnInit {
   	
   }
 
+
+  uploadFile(event) {
+  	console.log(event.target.files[0]);
+  }
+
 }
