@@ -13,6 +13,8 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +24,13 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp( environment ),
+    AngularFireModule.initializeApp( environment.firebase ),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
